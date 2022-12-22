@@ -12,13 +12,19 @@ Description of the Code :
       Priority Scheduling is an algorithm where we are assigning priority for each lane.
       a.Initially we are extracting the count of the vehicles using Vehicle_1.py where I have used Transfer Learning for training a Vehicle Detection Model and used the
          architechture of YoloV3 Model for the same.
+         
       b.After extracting the Vehicle count for each Lane we are taking the Lane with maximum vehicle count and based on the traffic density in that Lane we calculating
         the Traffic Timer for that Lane.
+        
       c.Now once we Updated timer for a particular lane then we are adding +5 to the Priority List for that Lane whose timer we just updated.
+      
       d.We are subtracting -5 for the lanes whose timers are not updated.
+      
       e.So this is what Priority Scheduling does it maintains a priority list for the Lanes and if a particular Lane lets say has a prority value of -10 for example then 
         that lane would be selected and the timer for that lane would be calculated based on its traffic density.
+        
       f.Due to this Lanes with Very Low traffic density does not have to wait for a very long time and Basically gives fair priority to each lane.
+      
       g.Main purpose of the Priority Scheduling is to give fair priority to each lane.
       
 NOTE:Do watch the Demo video for getting an Idea how we have implemented a Basic Prototype with Raspberry Pi , Relays , Traffic Lights and Videos for Traffic Vehicles for 2 Lane intersection.
